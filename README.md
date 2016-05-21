@@ -6,6 +6,11 @@
 
 This is Misskey file server.
 
+## Requirements
+- Node.js
+- npm
+- GraphicsMagick
+
 ## How to build
 1. `git clone git://github.com/MissKernel/Misskey-File.git`
 2. `cd Misskey-File`
