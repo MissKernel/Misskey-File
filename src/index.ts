@@ -27,7 +27,7 @@
  */
 
 import * as cluster from 'cluster';
-import * as argv from 'argv';
+import argv from './argv';
 import {logInfo, logWarn} from 'log-cool';
 import checkDependencies from './check-dependencies';
 
@@ -35,21 +35,12 @@ import checkDependencies from './check-dependencies';
 
 const env = process.env.NODE_ENV;
 
-argv.option({
-	name: 'skip-check-dependencies',
-	type : 'string',
-	description: '依存関係のチェックをスキップします',
-	example: "npm start --skip-check-dependencies"
-});
-
-const args = argv.run();
-
 if (cluster.isMaster) {
 	console.log('Welcome to Misskey File');
 
 	logInfo(`environment: ${env}`);
 
-	if (!args.options.hasOwnProperty('skip-check-dependencies')) {
+	if (!argv.options.hasOwnProperty('skip-check-dependencies')) {
 		checkDependencies();
 	}
 

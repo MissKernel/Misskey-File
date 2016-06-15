@@ -26,6 +26,7 @@
 		"./src/api/delete.ts",
 		"./src/api/register.ts",
 		"./src/api/rename.ts",
+		"./src/argv.ts",
 		"./src/check-dependencies.ts",
 		"./src/config.ts",
 		"./src/index.ts",
