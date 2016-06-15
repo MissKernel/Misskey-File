@@ -33,7 +33,9 @@
     "gm": "1.22.0",
     "mkdirp": "0.5.1",
     "multer": "1.1.0",
-    "rimraf": "2.5.1"
+    "rimraf": "2.5.1",
+    "log-cool": "1.1.0",
+    "shelljs": "0.7.0"
   },
   "private": true
 }

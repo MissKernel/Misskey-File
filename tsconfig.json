@@ -1,4 +1,7 @@
 {
+	"atom": {
+		"rewriteTsconfig": true
+	},
 	"compileOnSave": false,
 	"compilerOptions": {
 		"noEmitOnError": false,
@@ -11,15 +14,21 @@
 		"outDir": "built",
 		"rootDir": "src"
 	},
+	"filesGlob": [
+		"./node_modules/typescript/lib/lib.es6.d.ts",
+		"./typings/bundle.d.ts",
+		"./src/**/*.ts"
+	],
 	"files": [
-		"node_modules/typescript/lib/lib.es6.d.ts",
-		"typings/bundle.d.ts",
-		"src/index.ts",
-		"src/config.ts",
-		"src/server.ts",
-		"src/api-server.ts",
-		"src/api/register.ts",
-		"src/api/rename.ts",
-		"src/api/delete.ts"
+		"./node_modules/typescript/lib/lib.es6.d.ts",
+		"./typings/bundle.d.ts",
+		"./src/api-server.ts",
+		"./src/api/delete.ts",
+		"./src/api/register.ts",
+		"./src/api/rename.ts",
+		"./src/check-dependencies.ts",
+		"./src/config.ts",
+		"./src/index.ts",
+		"./src/server.ts"
 	]
 }

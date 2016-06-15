@@ -33,6 +33,9 @@
     },
     "gm/gm.d.ts": {
       "ref": "1315d46f8066eec8c197914da88e98629ebc2254"
+    },
+    "shelljs/shelljs.d.ts": {
+      "ref": "1315d46f8066eec8c197914da88e98629ebc2254"
     }
   }
 }

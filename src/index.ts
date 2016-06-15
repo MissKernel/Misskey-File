@@ -27,6 +27,8 @@
  */
 
 import * as cluster from 'cluster';
+import {logInfo, logWarn} from 'log-cool';
+import checkDependencies from './check-dependencies';
 
 (<any>Error).stackTraceLimit = Infinity;
 
@@ -34,6 +36,10 @@ const env = process.env.NODE_ENV;
 
 if (cluster.isMaster) {
 	console.log('Welcome to Misskey File');
+
+	logInfo(`environment: ${env}`);
+
+	checkDependencies();
 
 	if (env !== 'production') {
 		logWarn('Productionモードではありません。本番環境で使用しないでください。');
