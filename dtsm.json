@@ -30,6 +30,9 @@
     },
     "gulp-tslint/gulp-tslint.d.ts": {
       "ref": "6052959591c9bc6f8463c58220965c7030ba934d"
+    },
+    "gm/gm.d.ts": {
+      "ref": "1315d46f8066eec8c197914da88e98629ebc2254"
     }
   }
 }

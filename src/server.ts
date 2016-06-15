@@ -4,7 +4,7 @@ import * as https from 'https';
 import * as cluster from 'cluster';
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
-const gm: any = require('gm');
+import * as gm from 'gm';
 import config from './config';
 
 const app = express();
@@ -54,7 +54,7 @@ app.get('*', (req, res) => {
 				gm(filePath)
 				.resize(150, 150)
 				.compress('jpeg')
-				.quality('80')
+				.quality(80)
 				.toBuffer('jpeg', (genThumbnailErr: Error, thumbnail: Buffer) => {
 					res.header('Content-Type', 'image/jpeg');
 					res.send(thumbnail);
