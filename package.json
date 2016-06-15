@@ -27,14 +27,17 @@
     "typescript-require": "0.2.9"
   },
   "dependencies": {
+    "argv": "0.0.2",
     "body-parser": "1.15.1",
+    "dtsm": "^1.1.0",
     "express": "4.13.4",
     "file-type": "3.8.0",
     "gm": "1.22.0",
+    "install": "^0.8.1",
+    "log-cool": "1.1.0",
     "mkdirp": "0.5.1",
     "multer": "1.1.0",
     "rimraf": "2.5.1",
-    "log-cool": "1.1.0",
     "shelljs": "0.7.0"
   },
   "private": true
