@@ -6,7 +6,7 @@
 
 This is Misskey file server.
 
-## Requirements
+## External Dependencies
 - Node.js
 - npm
 - GraphicsMagick
